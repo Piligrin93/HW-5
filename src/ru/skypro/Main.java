@@ -28,12 +28,10 @@ public class Main {
         for(int i = 0; i < massiv1.length; i++){ // Для Задания 4 ищем четные и нечетные, выводи в консуль по условия
             if(massiv1[i] % 2 != 0) {
                 massiv1[i] = massiv1[i] + 1;
-            } else if (massiv1[i] == 0) {
-                System.out.println(massiv1[i]);
             }
-                System.out.print(massiv1[i] + " ,");
+            if (i != massiv1.length - 1) System.out.print(massiv1[i] + " ,");
+            else System.out.println(massiv1[i]);
         }
-        System.out.println(); // Добавил, потому что не переходит следующий массив 2 на новую строку
 
 
         double[] massiv2 = {1.57, 7.654, 9.986}; // Объявление массива2 по заданным параметрам Задания 1
